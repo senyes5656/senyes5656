@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0, user-scalable=yes">
+<title>这是个没用的网站！</title>
+<link rel="stylesheet" href="1.css">
+  <style>
+    label {
+      margin-right:10px;
+    }
+  </style>
+<script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <div class="panel panel-success">
+      <div class="panel-heading"><h1>这是个没用的网站！</h1></div>
+    </div>
+    <p><h3>原来github上竟然真的可以挂网页</h3></p>
+    <p><li>有空看看还可以搞什么好玩的</li></p>
+    <p><li>对了，down的网页打不开哦</li></p>
+    <p><li>因为我根本没把那个页面复制过来</li></p>
+    <a href="down/down1/index.html">我down的一个网页</a><button onclick="window.location.href='http://blog.zcy.life'">我的一个原始状态的测试博客</button>
+<span class="btn-container">
+  <button class="btn" onclick="window.location.href='http://qq.zcy.life:5000'">登录NAS</button>
+</span>
+    <p><li>有空我会down更多东西的</li></p>
+<label for="inputString" style="margin-left: 70px;vertical-align: top; margin-top: -20px;">我是谁？：</label>
+    <input type="text" id="inputString" oninput="showText()" />
+
+    <p id="outputText" style="padding-left: 60px; white-space: pre-wrap; word-break: break-all; width: 1200px;"></p>
+
+
+	<script>
+		function showText() {
+			const inputString = document.getElementById("inputString").value;
+			const outputText = document.getElementById("outputText");
+			if (inputString === "赵辰宇") { // 在这里指定需要输入的字符串
+				outputText.innerHTML = "对的我是赵辰宇！你真棒。你是最美丽/最帅气的！你一定会获得无限的好运的！锦鲤永远伴随你！"; // 在这里指定需要显示的文本
+            
+			} else {
+				outputText.innerHTML = "";
+			}
+		}
+	</script>
+  </div>
+</div>
+<audio autoplay="autoplay">
+	<source src="/1.mp3"/>
+</audio>
+<iframe src="/1.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+<script>
+window.addEventListener('load', function() {
+    var audio = document.querySelector('audio');
+    audio.play();
+});
+</script>
+
+</body>
+</html>
