@@ -1,0 +1,67 @@
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.jumbotron {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem #ccc;
+  text-align: left;
+}
+
+.panel-heading {
+  background-color: #28a745;
+  color: #fff;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  padding: 15px;
+  font-size: 3rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.panel-success {
+  border-color: #28a745;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-container {
+ 
+ position: relative;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
